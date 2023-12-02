@@ -1,0 +1,17 @@
+
+# 应用服务 WEB 访问端口
+server:
+  port: 9090
+
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/databaselab?serverTimezone=GMT%2b8
+    username: root
+    password: aaaa
+
+mybatis:
+  mapper-locations: classpath:mapper/*.xml   #扫描所有mybatis的xml文件，xml用来写sql的
+  type-aliases-package: com.example.springbootgit.mybatis.entity
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #用于输出sql语句,因为引入plus之后被plus管理了，就需要重新配置
