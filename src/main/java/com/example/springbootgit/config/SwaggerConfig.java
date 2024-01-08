@@ -31,7 +31,7 @@ public class SwaggerConfig {
                 .useDefaultResponseMessages(true)
                 .forCodeGeneration(false)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.example.springboot.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.example.springbootgit.controller"))
                 .paths(PathSelectors.any())
                 .build();
     }

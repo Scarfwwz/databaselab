@@ -1,0 +1,6 @@
+[submodule "databaselab"]
+	path = databaselab
+	url = https://github.com/Scarfwwz/databaselab.git
+[submodule "databaselab-vue"]
+	path = databaselab-vue
+	url = https://github.com/Scarfwwz/databaselab-vue.git
